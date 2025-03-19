@@ -80,7 +80,7 @@ let rec betaReduction lambdaTerm =
         | Application(firstTerm, secondTerm) ->
             let newFirstTerm = betaReductionStep firstTerm
             match newFirstTerm with
-            | Abstraction _ -> (newFirstTerm, betaReductionStep secondTerm) |> Application |> betaReductionStep
+            | Abstraction _ -> (newFirstTerm, secondTerm) |> Application |> betaReductionStep
             | _ -> Application(firstTerm, betaReductionStep secondTerm)
         | Abstraction(x, body) -> Abstraction(x, betaReductionStep body)
         | _ -> lambdaTerm
