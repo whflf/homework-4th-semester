@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BracketSequence", "BracketSequence.fsproj", "{77034C9A-B2CE-46DF-AA6B-962BB10D7A6E}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BracketSequence.Tests", "..\BracketSequence.Tests\BracketSequence.Tests.fsproj", "{82234C16-B795-471F-A272-FCA9ABD65625}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77034C9A-B2CE-46DF-AA6B-962BB10D7A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77034C9A-B2CE-46DF-AA6B-962BB10D7A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77034C9A-B2CE-46DF-AA6B-962BB10D7A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77034C9A-B2CE-46DF-AA6B-962BB10D7A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82234C16-B795-471F-A272-FCA9ABD65625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82234C16-B795-471F-A272-FCA9ABD65625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82234C16-B795-471F-A272-FCA9ABD65625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82234C16-B795-471F-A272-FCA9ABD65625}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
