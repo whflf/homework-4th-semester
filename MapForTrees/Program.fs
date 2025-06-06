@@ -4,7 +4,14 @@ type Tree<'a> =
     | Node of 'a * Tree<'a> * Tree<'a>
     | Empty
 
-let rec map f binTree =
-    match binTree with
-    | Empty -> Empty
-    | Node(x, l, r) -> Node(f x, map f l, map f r)
+let map f tree =
+    let rec mapCps tree cont =
+        match tree with
+        | Empty -> cont Empty
+        | Node(x, l, r) ->
+            mapCps l (fun mappedLeft ->
+            mapCps r (fun mappedRight ->
+                cont (Node(f x, mappedLeft, mappedRight))
+            ))
+    
+    mapCps tree id
