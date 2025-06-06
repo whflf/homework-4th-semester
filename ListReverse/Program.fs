@@ -1,5 +1,7 @@
-﻿let rec reverseList list =
-    match list with
-    | [] -> []
-    | [x] -> [x]
-    | head :: tail -> reverseList tail @ [head]
+﻿let reverseList list =
+    let rec reverse acc lst =
+        match lst with
+        | [] -> acc
+        | head :: tail -> reverse (head :: acc) tail
+    
+    reverse [] list
