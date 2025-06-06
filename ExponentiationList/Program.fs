@@ -1,4 +1,5 @@
 ﻿let getExponentList n m =
+    if n > m then failwith "n should be less than m"
     let rec addPowerOfTwo acc i =
         if i = m then
             addPowerOfTwo (pown 2 (n + m) :: acc) (i - 1)
